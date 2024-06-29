@@ -8027,7 +8027,7 @@ var PDFiumServer = class extends EngineRunner {
     if (this.props.wasmBinary) {
       wasmBinary = this.props.wasmBinary;
     } else {
-      let wasmUrl = "https://cdn-staging.anduin.dev/lib/js/pdfium/0.0.1/dist/pdfium.wasm";
+      let wasmUrl = "https://raw.githubusercontent.com/nguyenyou/pdf-sample-files/main/examples/pdfium.wasm";
       if (this.props.wasmUrl) wasmUrl = this.props.wasmUrl;
       const response = await fetch(wasmUrl);
       wasmBinary = await response.arrayBuffer();
